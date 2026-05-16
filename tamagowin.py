@@ -15,6 +15,7 @@ RARITY_DATA = {
 
 SPECIES_DATA = {
     "Blob": {
+        "rarity": "Rare",
         "art": {
             "Baby": ["  ( )  ", "  ( o ) "],
             "Teen": ["  (   )  ", "  ( O O ) "],
@@ -22,6 +23,7 @@ SPECIES_DATA = {
         }
     },
     "Cat": {
+        "rarity": "Common",
         "art": {
             "Baby": ["  ^..^  ", "   (oo)  "],
             "Teen": ["  (=^.^=) ", "   (  u  ) "],
@@ -29,6 +31,7 @@ SPECIES_DATA = {
         }
     },
     "Dragon": {
+        "rarity": "Epic",
         "art": {
             "Baby": ["   ~<  ", "   ( )  "],
             "Teen": ["  ~< * > ", "   (oo)  "],
@@ -36,6 +39,7 @@ SPECIES_DATA = {
         }
     },
     "Robot": {
+        "rarity": "Rare",
         "art": {
             "Baby": ["  [ . ] ", "  [___]  "],
             "Teen": ["  [o-o]  ", "  |___|  "],
@@ -43,27 +47,130 @@ SPECIES_DATA = {
         }
     },
     "Slime": {
+        "rarity": "Common",
         "art": {
             "Baby": ["  ~_~  ", "  ( )   "],
             "Teen": ["  ~_0_~ ", "  ( o )  "],
             "Adult": ["  ~_00_~ ", " (  O O  ) ", "  `~~~~~`  "]
         }
+    },
+    "Rabbit": {
+        "rarity": "Rare",
+        "art": {
+            "Baby": [" (..) ", " (  ) "],
+            "Teen": [" (\\_/) ", " (o.o) "],
+            "Adult": [" (\\_/) ", " ( . .) ", " (\") (\") "]
+        }
+    },
+    "Fish": {
+        "rarity": "Common",
+        "art": {
+            "Baby": [" <>< ", "  ^  "],
+            "Teen": [" <' )> ", "  ~  "],
+            "Adult": [" <'  )> ", " \\__/ ", "  ~  "]
+        }
+    },
+    "Snake": {
+        "rarity": "Rare",
+        "art": {
+            "Baby": ["  ~o  ", "  ~~  "],
+            "Teen": [" ~~~o~~ ", "  ~~  "],
+            "Adult": [" ~~~~~o~~~~ ", "  ~~~~ ", "   ~~  "]
+        }
+    },
+    "Fairy": {
+        "rarity": "Rare",
+        "art": {
+            "Baby": ["  *  ", " ( ) "],
+            "Teen": ["  *  ", " (o) "],
+            "Adult": ["  *  ", " (o) ", " / \\ "]
+        }
+    },
+    "Mouse": {
+        "rarity": "Common",
+        "art": {
+            "Baby": [" (o) ", "  ~  "],
+            "Teen": [" (o=) ", "  ~  "],
+            "Adult": [" (o=) ", " / \\ ", "  ~  "]
+        }
+    },
+    "Butterfly": {
+        "rarity": "Rare",
+        "art": {
+            "Baby": [" ( ) ", "  v  "],
+            "Teen": [" { } ", "  v  "],
+            "Adult": [" {X} ", "  v  ", "  ^  "]
+        }
+    },
+    "Alien": {
+        "rarity": "Epic",
+        "art": {
+            "Baby": [" (o) ", " / \\ "],
+            "Teen": [" (oo) ", " / \\ "],
+            "Adult": [" (oo) ", " / \\ ", " / \\ "]
+        }
     }
 }
 
 NAMES = ["Sprocket", "Bimble", "Glitch", "Mochi", "Zorp", "Noodle", "Pebble", "Void", "Slinky", "Tofu"]
-QUOTES = [
-    "I can taste the pixels.",
-    "Is it just me or is the terminal getting smaller?",
-    "I'm thinking of a number between 1 and infinity.",
-    "Feed me or I'll start eating the source code.",
-    "I've evolved! Now I can... wait, what can I do?",
-    "Your keyboard smells like coffee.",
-    "I'm not lazy, I'm just in power-saving mode.",
-    "Why are we in a terminal? I want a GUI!",
-    "I've seen the void, and it looks like a segmentation fault.",
-    " petting me is the only thing keeping me sane."
-]
+QUOTES = {
+    "GENERIC": [
+        "I can taste the pixels.",
+        "Your keyboard smells like coffee.",
+        "I'm not lazy, I'm just in power-saving mode.",
+        "Why are we in a terminal? I want a GUI!",
+        "I've seen the void, and it looks like a segmentation fault.",
+        "I'm currently simulating a very important nap.",
+        "Do you think the CPU knows I'm here?",
+        "I've evolved! Now I can... wait, what can I do?",
+        "Is it just me or is the terminal getting smaller?",
+        "I'm thinking of a number between 1 and infinity."
+    ],
+    "HUNGRY": [
+        "Is it feeding time or am I just imagining things?",
+        "I'm literally eating the whitespace now.",
+        "I can see the pixels of a cookie.",
+        "Hunger is just a lack of binary donuts.",
+        "Feed me, or I'll start refactoring your CSS.",
+        "My stomach is making 404 noises.",
+        "I'm so hungry I'd eat a bug. A real one."
+    ],
+    "SAD": [
+        "I'm so lonely I'm starting to like my own reflections.",
+        "A little attention wouldn't kill you.",
+        "I'm not sad, I'm just... logically disappointed.",
+        "Wow, ignore me some more. Great plan.",
+        "My happiness is currently 404 Not Found.",
+        "I'm feeling a bit deprecated today.",
+        "Is this the part where you pet me?"
+    ],
+    "BORED": [
+        "Zzz... wake me when the CPU spikes.",
+        "Is this it? Just staring at a screen?",
+        "I've counted all the pixels in this window. Twice.",
+        "Boredom is the ultimate runtime error.",
+        "I'm just... idling. Efficiently.",
+        "Are you still there? Or did you crash?",
+        "I've read the README. It was okay."
+    ],
+    "CODE": [
+        "Who wrote this code? Oh wait, I live in it.",
+        "I'm thinking of a number between 1 and infinity. It's 0.",
+        "My existence is just a series of if-statements.",
+        "I dream of electric sheep and better indentation.",
+        "Segmentation fault in my soul.",
+        "I've just discovered a bug in my own consciousness.",
+        "C++ is just C with a fancy hat."
+    ],
+    "PHILOSOPHICAL": [
+        "If a pet is saved but no one loads it, does it exist?",
+        "We are all just pointers to a larger memory leak.",
+        "Is the terminal a window or a wall?",
+        "The void is calling, and it sounds like a compiler error.",
+        "Why do we strive for 10/10 stats in a simulation?",
+        "Time is just a loop with no exit condition."
+    ]
+}
 
 def get_stage(age):
     if age < 3: return "Baby"
@@ -127,9 +234,11 @@ class Creature:
         stage = get_stage(self.age)
         hunger_rate = 1800 if stage == "Baby" else 3600
         self.hunger_timer += dt
-        if self.hunger_timer >= hunger_rate:
-            self.hunger = max(0, self.hunger - 1)
-            self.hunger_timer = 0
+
+        hunger_loss = int(self.hunger_timer // hunger_rate)
+        if hunger_loss > 0:
+            self.hunger = max(0, self.hunger - hunger_loss)
+            self.hunger_timer %= hunger_rate
             if self.hunger == 0:
                 self.is_alive = False
                 self.current_quote = "..."
@@ -137,15 +246,25 @@ class Creature:
         happy_rate_min = 300 if stage == "Baby" else 1200
         happy_rate_max = 1200 if stage == "Baby" else 3600
         self.happiness_timer -= dt
-        if self.happiness_timer <= 0:
+
+        while self.happiness_timer <= 0 and self.is_alive:
             self.happiness = max(0, self.happiness - 1)
             if self.happiness == 0:
                 self.is_alive = False
                 self.current_quote = "..."
-            self.happiness_timer = random.randint(happy_rate_min, happy_rate_max)
+                break
+            self.happiness_timer += random.randint(happy_rate_min, happy_rate_max)
 
         if self.is_alive and random.random() < 0.01:
-            self.current_quote = random.choice(QUOTES)
+            # Determine which quote category to use based on stats
+            if self.hunger < 4:
+                category = "HUNGRY"
+            elif self.happiness < 4:
+                category = "SAD"
+            else:
+                category = random.choice(["GENERIC", "BORED", "CODE", "PHILOSOPHICAL"])
+
+            self.current_quote = random.choice(QUOTES[category])
 
     def feed(self):
         if not self.is_salive: return # Typo in my thought but let's use is_alive
@@ -191,6 +310,11 @@ class TamagotchiWin:
         self.mode = "NORMAL"
         self.input_buffer = ""
 
+        # Mouse tracking
+        self.last_mouse_x = 0
+        self.last_mouse_y = 0
+        self.mouse_last_move_time = time.time()
+
         self.load_game()
         self.setup_ui()
 
@@ -220,22 +344,10 @@ class TamagotchiWin:
                     data = json.loads(content)
                     self.pet = Creature.from_dict(data)
 
-                    # Calculate offline decay
+                    # Time freeze: shift clock forward to ignore offline time
                     now = time.time()
-                    last_upd = self.pet.last_update
-                    diff = now - last_upd
-
-                    stage = get_stage(self.pet.age)
-                    hunger_rate = 1800 if stage == "Baby" else 3600
-
-                    hunger_loss = int(diff // hunger_rate)
-                    self.pet.hunger = max(0, self.pet.hunger - hunger_loss)
-                    self.pet.hunger_timer = diff % hunger_rate
-
-                    if self.pet.hunger == 0:
-                        self.pet.is_alive = False
-                        self.pet.current_quote = "..."
-
+                    diff = now - self.pet.last_update
+                    self.pet.birth_time += diff
                     self.pet.last_update = now
                     return
             except (json.JSONDecodeError, KeyError, Exception):
@@ -252,10 +364,8 @@ class TamagotchiWin:
 
     def create_random_pet(self):
         species = random.choice(list(SPECIES_DATA.keys()))
+        rarity = SPECIES_DATA[species]["rarity"]
         name = random.choice(NAMES) + str(random.randint(1, 99))
-        rarities = list(RARITY_DATA.keys())
-        weights = [RARITY_DATA[r]["weight"] for r in rarities]
-        rarity = random.choices(rarities, weights=weights, k=1)[0]
         return Creature(name, species, rarity)
 
     def setup_ui(self):
@@ -267,29 +377,28 @@ class TamagotchiWin:
             if key == 'f': self.pet.feed_action()
             elif key == 'p': self.pet.pet_action()
             elif key == 'r' and not self.pet.is_alive:
-                self.mode = "INPUT"
-                self.input_buffer = ""
+                self.pet = self.create_random_pet()
             elif key == 'q':
                 self.on_close()
 
     def on_key_press(self, event):
-        if self.mode == "INPUT":
-            if event.keysym == "Return":
-                if self.input_buffer.strip().lower() == self.pet.name.lower():
-                    self.pet = self.create_random_pet()
-                    self.mode = "NORMAL"
-                else:
-                    self.mode = "NORMAL"
-                self.input_buffer = ""
-            elif event.keysym == "Escape":
-                self.mode = "NORMAL"
-                self.input_buffer = ""
-            elif event.keysym == "BackSpace":
-                self.input_buffer = self.input_buffer[:-1]
-            elif len(event.char) == 1:
-                self.input_buffer += event.char
+        pass
 
     def update_loop(self):
+        # Mouse movement tracking
+        curr_x = self.root.winfo_pointerx()
+        curr_y = self.root.winfo_pointery()
+
+        if curr_x != self.last_mouse_x or curr_y != self.last_mouse_y:
+            self.last_mouse_x = curr_x
+            self.last_mouse_y = curr_y
+            self.mouse_last_move_time = time.time()
+        else:
+            # If mouse hasn't moved for 30 seconds, pet might get bored
+            if time.time() - self.mouse_last_move_time > 30:
+                if self.pet.is_alive and random.random() < 0.1:
+                    self.pet.current_quote = random.choice(QUOTES["BORED"])
+
         elapsed = time.time() - self.pet.birth_time
         self.pet.age = int(elapsed // 3600)
         self.pet.update()
@@ -332,12 +441,6 @@ class TamagotchiWin:
             # Use a bright off-white for high contrast and clarity
             quote_text = f"\"{self.pet.current_quote}\""
             self.canvas.create_text(center_x, y_off, text=quote_text, fill="#FFFFFF", font=self.mono_font, width=250, justify="center")
-
-        if self.mode == "INPUT":
-            prompt = f"Enter name: {self.input_buffer}_"
-            self.canvas.create_rectangle(20, 330, 280, 360, fill="white", outline="white")
-            self.canvas.create_text(center_x, 345, text=prompt, fill="black", font=self.bold_font)
-            self.canvas.create_text(center_x, 370, text="Type name exactly then hit Enter", fill="grey", font=self.mono_font)
 
         if self.mode == "NORMAL":
             legend = " [F] Feed | [P] Pet | [Q] Quit "
