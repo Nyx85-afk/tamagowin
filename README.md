@@ -6,6 +6,6 @@ Created with Claude Code as an exercise to try and understand what Claude Code a
 
 16 May 2026
 ---
-Added Alien, Rabbit, Snake, Fish, Fairy, Mouse and Butterfly and rarity to the game
+Added Alien, Rabbit, Snake, Fish, Fairy, Mouse, Butterfly and rarity to the game
 
 
