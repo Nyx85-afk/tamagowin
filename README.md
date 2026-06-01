@@ -8,4 +8,10 @@ Created with Claude Code as an exercise to try and understand what Claude Code a
 ---
 Added Alien, Rabbit, Snake, Fish, Fairy, Mouse, Butterfly and rarity to the game
 
+---
+
+Run it in its own window using ``` python3 tamagowin.py ```
+
+💻 It runs in a window, you can move it around as usual.
+
 
